@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sri Lanka Travel Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <nav>
+            <div class="logo">🌴 Tour Guide</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeButton" class="theme-button">
+                🌙
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+
+        <h1>EXPLORE SRI LANKA</h1>
+
+        <img
+            id="hero"
+            src="https://images.pexels.com/photos/319892/pexels-photo-319892.jpeg"
+            alt="Beautiful Sri Lanka">
+
+        <p>
+            <b>Discover beautiful places & experiences</b>
+        </p>
+
+        <button id="exploreButton" class="main-button">
+            Explore Now
+        </button>
+
+    </section>
+
+
+    <!-- Places Section -->
+    <section id="places">
+
+        <h2>Beautiful Places</h2>
+
+        <!-- Search -->
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search destinations...">
+
+        </div>
+
+
+        <div class="places-container">
+
+            <!-- Kandy -->
+            <div class="place-card" data-name="kandy">
+
+                <img
+                    src="https://media.istockphoto.com/id/502631824/photo/temple-of-the-tooth-kandy-sri-lanka.jpg?b=1&s=612x612&w=0&k=20&c=dG1yeempkX2nsgXfDmoA32__Bn-mak7GidP9d79YAkE="
+                    alt="Kandy">
+
+                <h3>Kandy</h3>
+
+                <p>
+                    Explore the Temple of the Sacred Tooth Relic
+                    and beautiful hills.
+                </p>
+
+                <button class="details-button"
+                        onclick="showPlaceInfo('Kandy')">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- Ella -->
+            <div class="place-card" data-name="ella">
+
+                <img
+                    src="https://media.istockphoto.com/id/1131454948/photo/train-from-ella-to-kandy-sri-lanka.jpg?s=612x612&w=0&k=20&c=NP-35a8fqS9fzbO3tsO70VHXHBhQ_F9eYT_8uyckU6Y="
+                    alt="Ella">
+
+                <h3>Ella</h3>
+
+                <p>
+                    Enjoy mountains, waterfalls and the famous
+                    scenic train journey.
+                </p>
+
+                <button class="details-button"
+                        onclick="showPlaceInfo('Ella')">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- Galle -->
+            <div class="place-card" data-name="galle">
+
+                <img
+                    src="https://images.pexels.com/photos/39361878/pexels-photo-39361878.jpeg"
+                    alt="Galle">
+
+                <h3>Galle</h3>
+
+                <p>
+                    Discover the historic Galle Fort and
+                    beautiful southern coast.
+                </p>
+
+                <button class="details-button"
+                        onclick="showPlaceInfo('Galle')">
+                    View Details
+                </button>
+
+            </div>
+
+            <!-- Anuradhapura -->
+            <div class="place-card" data-name="galle">
+
+                <img
+                    src="https://images.pexels.com/photos/13667937/pexels-photo-13667937.jpeg"
+                    alt="Anuradhapura">
+
+                <h3>Anuradhapura</h3>
+
+                <p>
+                    Explore the ancient city of Anuradhapura 
+                    and its sacred Buddhist heritage.
+                </p>
+
+                <button class="details-button"
+                        onclick="showPlaceInfo('Galle')">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Destinations -->
+    <section>
+
+        <h2>Popular Destinations</h2>
+
+        <ul class="destination-list">
+
+            <li class="place-box">
+
+                <img
+                    src="https://media.istockphoto.com/id/519705262/photo/masks-and-dalada-maligawa-kandy-temple-view-sri-lanka.jpg?b=1&s=612x612&w=0&k=20&c=G5qIU_lHxl-Wv7f7ay0vG2hVrARNaFPcWLxbGHvabtY="
+                    alt="Kandy">
+
+                <h3>Kandy</h3>
+
+            </li>
+
+
+            <li class="place-box">
+
+                <img
+                    src="https://media.istockphoto.com/id/822722846/photo/nine-arches-bridge-demodara-in-ella-sri-lanka.jpg?b=1&s=612x612&w=0&k=20&c=Jipp63yy-kqR8dxCkRJvmrz8-LY1G6YbnmxeHPRxYPk="
+                    alt="Ella">
+
+                <h3>Ella</h3>
+
+            </li>
+
+
+            <li class="place-box">
+
+                <img
+                    src="https://images.pexels.com/photos/19873775/pexels-photo-19873775.jpeg"
+                    alt="Galle">
+
+                <h3>Galle</h3>
+
+            </li>
+
+            <li class="place-box">
+
+                <img
+                    src="https://images.pexels.com/photos/18619138/pexels-photo-18619138.jpeg"
+                    alt="Sigiriya">
+
+                <h3>Sigiriya</h3>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Travel Information -->
+    <section id="information">
+
+        <h2>Travel Information</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Place</th>
+                        <th>Province</th>
+                        <th>Best Time to Visit</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Kandy</td>
+                        <td>Central</td>
+                        <td>Dec - Apr</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ella</td>
+                        <td>Uva</td>
+                        <td>Jan - Apr</td>
+                    </tr>
+
+                    <tr>
+                        <td>Galle</td>
+                        <td>Southern</td>
+                        <td>Dec - Mar</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Useful Links</h2>
+
+        <div class="links">
+
+            <a href="https://www.google.com/maps" target="_blank">
+                Google Maps
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank">
+                YouTube
+            </a>
+
+            <a href="https://www.srilanka.travel/" target="_blank">
+                Sri Lanka Tourism
+            </a>
+
+        </div>
+
+
+        <!-- Simple Contact Form -->
+        <div class="contact-form">
+
+            <h3>Send a Message</h3>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
+
+            <textarea
+                id="message"
+                placeholder="Your Message"></textarea>
+
+            <button onclick="sendMessage()">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Thank You -->
+    <section id="thank-you">
+
+        <h2>Thank You for Visiting!</h2>
+
+        <p>
+            We hope you enjoyed exploring the beauty of Sri Lanka.
+        </p>
+
+        <div class="thank-images">
+
+            <img
+                src="https://images.pexels.com/photos/33130315/pexels-photo-33130315.jpeg"
+                alt="Yala National Park">
+
+            <img
+                src="https://media.istockphoto.com/id/171271183/photo/palm-beach-of-unawatuna-sri-lanka.jpg?b=1&s=612x612&w=0&k=20&c=L9doigfmduLno07hAtfdUk9EZvJ0dlhiK3sJA-otLZc="
+                alt="Unawatuna Beach">
+
+            <img
+                src="https://images.pexels.com/photos/36703576/pexels-photo-36703576.jpeg"
+                alt="Colombo">
+
+            <img
+                src="https://images.pexels.com/photos/29202503/pexels-photo-29202503.jpeg"
+                alt="Anuradhapura">
+
+        </div>
+
+    </section>
+
+
+    <!-- Back to Top -->
+    <button id="topButton">
+        ↑
+    </button>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span> Sri Lanka Travel Guide
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
