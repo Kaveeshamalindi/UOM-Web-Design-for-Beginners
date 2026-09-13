@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigation</title>
+
+    <style>
+        ul{
+            list-style-type: none; /*RemoveBullets*/
+            margin: 0;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        li{
+            display: inline; /*For horizontal Nav Bar*/
+        }
+
+        li a{
+            padding: 10px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .active{
+            background-color: palegreen;
+        }
+
+        li a:hover{
+            background-color: greenyellow;
+        }
+
+        img{
+            border-radius: 15px;
+            border: 1px solid #790707;
+            padding: 10px;
+            width: 100px;
+            height: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            opacity: 0.5;
+        }
+
+        /*img{
+            max-width: 100%;
+            height: auto;
+        }*/
+
+        vedio{
+            width: 100%;
+            height: auto;
+        }
+
+        .transform_animation{
+            width: 200px;
+            height: 100px;
+            margin-top: 200px;
+            background-color: blueviolet;
+        }
+
+        .transform_animation:hover{
+            /*transform: scale(2,2);*/
+            /*transform: rotate(75deg);*/
+            transform: translate(100px, 0px);
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            font-weight: 900;
+            padding: 10px 5px 5px 0px;
+            float: left;
+            line-height: 15px;
+        }
+
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">HTML5</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Contact</li>
+    </ul>
+
+    <br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTho08CAybhJ8hY9cWhW3EDSfHl8IfQ8T7vN4ASwH8TCA&s=10" alt="Logo">
+    
+    <video wight="50" /*autoplay*/ /*muted*/ controls>
+        <source src="Media/Video.mp4" typt="video/mp4">
+    </video>
+
+    <centre>
+        <div class="transform_animation"></div>
+    </centre>
+
+    <p>Cascading Style Sheets (CSS) is the standard design language used to control 
+        the presentation and layout of web pages. While HTML structures the content 
+        of a website, CSS is responsible for its visual appearance, including aspects 
+        like colors, fonts, spacing, and responsive layouts that adapt to different 
+        screen sizes. By separating a website's design from its underlying content, 
+        CSS allows developers to apply consistent styling across multiple web pages 
+        efficiently, creating a visually engaging and user-friendly experience.</p>
+</body>
+</html>

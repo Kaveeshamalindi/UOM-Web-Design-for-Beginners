@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+    <script language="JavaScript" type="text/JavaScript">
+
+        function clickevent() {
+            document.write("Hello All, This is your First JavaScript Event");
+        }
+
+        function myFunction() {
+            alert("I am an alert box!");
+        }
+
+        function create() {
+            alert("Signed");
+        }
+
+    </script>
+
+    <h3> LOGIN </h3>  
+    <formform ="Login_form" onsubmit="submit_form()">  
+        <h4> USERNAME</h4>  
+        <input type="text" placeholder="Enter your email id"/>  
+        <h4> PASSWORD</h4>  
+        <input type="password" placeholder="Enter your password"/></br></br>  
+        <input type="submit" value="Login"/>  
+        <input type="button" value="SignUp" onClick="create()"/>  
+    </form> 
+
+    <br><br>
+
+    <button onclick="myFunction()">Activate</button>
+
+    <h1>JavaScript Events</h1>
+
+    <input type="text" id="input" onkeydown="clickevent()"
+
+
+    <form>
+        <input type="button" onclick="clickevent()" value="Click">
+    </form>
+
+    <br><br>
+
+    <form>
+        <input type="button" onmouseover="clickevent()" value="Click">
+    </form>
+
+
+    <p onmouseover="clickevent()" >See the magic</p>
+
+
+</body>
+
+</html>
